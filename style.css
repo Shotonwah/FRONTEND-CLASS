@@ -1,0 +1,26 @@
+/* .form{
+    background-color: cadetblue;
+
+}
+.form-group{
+    display: block;
+}
+.form-control{
+    width: 500px;
+    height: 100px;
+} */
+
+/* .can{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+} */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: cadetblue;
+}
