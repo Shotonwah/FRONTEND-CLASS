@@ -3,20 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript class</title>
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">>
+    <title>Bootsrap form</title>
+    <script href="script.js"></script>
+<!--     <link rel="stylesheet" href="style.css">
+ -->
 </head>
-<body>
-     <h3>Muslim Mentorship Connect</h3>
-    <p>Magnova is a Frontend Facilitator</p>
-    <p id="mag"></p>
-    <p id="mag1"></p>
-    <button type="button" onclick="myFunction()">Click To See Reviews</button>
-
-    <script>
-        function myFunction() {
-            document.getElementById('mag').innerHTML= 'Tho you are good at what you do,I am honored to be part of your class..Thank you very much.'
-            document.getElementById('mag1').innerHTML= 'Magnova need do review what has been done in previous classes so people who missed can catch up'
+<style>
+        .full-height {
+            height: 100vh;
         }
-    </script> 
+        .form-background {
+            background-color: darkslategrey; 
+            padding: 20px;
+            border-radius: 10px; 
+            color: white;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+        .Form{
+          text-align: center;
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-control{
+            background-color: gray;
+        }
+        .custom-height-input{
+            height: 100px;
+        }
+        .submit{
+            border-radius: 10px;
+            margin: 0 200px auto;
+            width: 150px;
+        }
+</style>
+
+<body>
+    <div class="container-fluid full-height d-flex justify-content-center align-items-center">
+        <div class="form-background">
+        <form class="form">
+            <h3 class="Form">Student Application Form</h3>
+            <div class="form-group">
+                <label for="Email1">First Name</label>
+                <input type="firstname" class="form-control" id="name" name="firstname">
+              </div>
+            <div class="form-group">
+                <label for="Email1">Last Name</label>
+                <input type="lastname" class="form-control" id="name" name="lastname">
+              </div>  
+            <div class="form-group">
+                <label for="Email1">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Example@gmail.com">
+                <small id="emailHelp" class="form-text">please fill out this field.</small>
+              </div>
+              <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" id="Password1" placeholder="enter password">
+                <small id="emailHelp" class="form-text">Enter atleast 12 characters</small>
+              </div>
+              <div class="form-group">
+                <label for="Email1">Address</label>
+                <input type="address" class="form-control" id="address" name="address">
+              </div>
+              <div class="form-group">
+                <label for="Email1">Country</label>
+                <input type="country" class="form-control" id="country" name="country">
+              </div> 
+              <div class="mb-3">
+                <label for="selectOption" class="form-group">City</label>
+<!--                 <input type="city" class="form-control" id="city" name="city">
+ -->                <select  class="form-control" id="exampleSelect" aria-label="Default select example" >
+                    <option selected></option>
+                    <option value="1">Abia</option>
+                    <option value="2">Lagos</option>
+                    <option value="3">Ogun</option>
+                    <option value="4">Kwara</option>
+                    <option value="5">Anambra</option>
+                    <option value="6">Sokoto</option>
+                    <option value="7">Kaduna</option>
+                    <option value="8">Ondo</option>
+                    <option value="9">Bauchi</option>
+                    <option value="10">Ekiti</option>
+                    <option value="11">Imo</option>
+                    <option value="12">Kogi</option>
+                    <option value="13">FCT</option>
+                    <option value="14">Oyo</option>
+                    <option value="15">Osun</option>
+                </select> 
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+              </div>       
+        <div class="row"> 
+        <div class="col-md-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
+                <label class="form-check-label" for="radio3">younger than 14</label>
+              </div>
+        </div>      
+              <div class="col-md-4 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
+                    <label class="form-check-label" for="radio3">14-17</label>
+                </div>
+              </div>        
+                <div class="col-md-4 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
+                        <label class="form-check-label" for="radio3">18+</label>
+                      </div>
+                </div>  
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                  </div>        
+                       <div class="row"> 
+                       <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
+                            <label class="form-check-label" for="radio3">Male</label>
+                          </div>
+                    </div> 
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
+                            <label class="form-check-label" for="radio3">Female</label>
+                          </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
+                            <label class="form-check-label" for="radio3">N/A</label>
+                          </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="age">Select the Applicable one</label>
+                  </div>
+                    <div class="form-remember">
+                        <input type="checkbox" class="Remember" id="remember">
+                        <label class="remember" for="remember1">I have been a student before</label>
+                      </div>
+                      <div class="form-remember">
+                        <input type="checkbox" class="Remember" id="remember">
+                        <label class="remember" for="remember1">I'm an Asolute beginner</label>
+                      </div>  
+                      <br>
+                      <div class="form-group">
+                        <label for="student">How long have you been a student?</label>
+                        <input type="student" class="form-control" id="name" name="state">
+                      </div>
+                      <div class="form-group">
+                        <label for="Email1">What do you Expect as a beginner?</label>
+                        <input type="beginner" class="form-control custom-height-input" id="name" name="state">
+                      </div>   
+                      <div class="form-group">
+                        <label for="Email1">Tell us about yourself?</label>
+                        <input type="beginner" class="form-control custom-height-input" id="name" name="state">
+                      </div>  
+                      <div class="form-group">
+                        <label for="Email1">What role can you perform?</label>
+                        <input type="beginner" class="form-control custom-height-input" id="name" name="state">
+                      </div>                        
+              <div class="form-remember">
+                <input type="checkbox" class="Remember" id="remember">
+                <label class="remember" for="remember1">Remember Me</label>
+              </div>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+    </div>
+
 </body>
 </html>
