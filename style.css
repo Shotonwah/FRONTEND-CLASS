@@ -1,26 +1,497 @@
-/* .form{
-    background-color: cadetblue;
 
-}
-.form-group{
-    display: block;
-}
-.form-control{
-    width: 500px;
-    height: 100px;
+/*     background-color: grey;
+ */
+/* .header{
+    position: absolute;
+  display: block;
+    padding: 10px;
+    margin: 25px auto 0;
+    font: 20 20px arial;
+    width: 65%;
+    text-align: end;
 } */
+/* .header a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.header a:hover{
+    background-color: forestgreen;
+} */
+@import url('node_modules/@fortawesome/fontawesome-free/css/all.min.css');
+ .body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.content{
+    background-color: darkslategray;
+    background-image: url(haleemah.jpg.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: gradient 15s ease infinite;
+    
+}
+ @keyframes gradient {
 
-/* .can{
-    width: 60%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: bisque;
-} */
-.form-container {
+    0% {
+    
+    background-position: 0% 50%;
+    
+    }
+    50% {
+
+        background-position: 100% 50%;
+        
+        }
+        
+        100% {
+        
+        background-position: 0% 50%;
+        
+        }
+} 
+ .display{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-color: cadetblue;
+ }
+ .leemah{
+    padding: 20px;
+    color: gold;
+    font-size:  30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+ .leemah i{
+    color: antiquewhite;
+ }
+.header{
+    width: 80%;
+    padding: 40px;
+    text-align: end;
 }
+.header a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.9
+}
+.header a:hover{
+    color: white;
+    background-color: gold;
+}
+.sho{
+    font-size: 30px;
+    text-align: center;
+    color: gold;
+}
+.iam{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.developer{
+    color: white;
+    margin-top: 5px;
+}
+.lang{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.works{
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px;
+    background-color: none;
+    color: black;
+    display: inline-block;
+    margin: 5px;
+    padding: 4px;
+   text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 3s ease, border-color 3s ease;
+}
+.works:hover{
+    background-color: gold;
+    color: white;
+}
+.button{
+    text-align: center;
+}
+.icon{
+    font-size: 20px;
+    padding: 2px;
+    color: gold;
+}
+.icn{
+    text-align: center;
+}
+.backgroundcolor{
+    background-color: rgb(5, 8, 19);
+/*     margin-top: -25px;
+ */    border-radius: 0 0 0;
+}
+/* .allcontent{
+    margin: 40px auto o;
+} */
+.know{
+    text-align: center;
+    color: gold;
+    left: 10%;
+    font-size: 25px;
+    bottom: 10%;
+    justify-content: center;
+    padding: 40px;
+}
+.aboutd{
+    color: white;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+.hj{
+    width: 50px;
+    border: 1px solid gold;
+    position: relative;
+    right: 3%; 
+    margin-top: -1px;
+}
+/* .haleemah{
+    border-radius: 100% 100% 100% 100%;
+    width: 400px;
+    border-top: -10px;
+    right: 50;
+    margin-top: -5px;
+} */
+/* .textwrap{
+    justify-content: center;
+    display: flex;
+    margin-bottom: -10%;
+} */
+.text{
+    color: white;
+    align-items: center;
+    letter-spacing: 3px;
+    font-size: 25px;
+    margin-top: -40px;
+    padding: 10px;
+}
+.link{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    padding-left: 8%;
+    margin-top: -10px;
+}
+.link a{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+.contactme{
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    color: gold;
+}
+.download{
+    text-decoration: none;
+    padding-left: 10%;
+    border: 1px solid;
+    border-radius: 20px;
+    color: black;
+    background-color: gold;
+}
+/* .thirdbg{
+    background-color: #000328;
+    margin-top: -2%;
+} */
+.Area{
+    color: gold;
+    padding: 8%;
+    font-size: 25px;
+    margin-bottom: -4%;
+}
+.expertise{
+    color: white;
+    font-size: 25px;
+    margin-top: -20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.images{
+    width: 500px;
+    display: flex;
+    padding-left: 3%;
+    border-radius: 10px;
+    align-items: center;
+}
+.pho1{
+    margin: 10px;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+}
+.pho2{
+    margin: 10px;
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+.pho3{
+    margin: 10px;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+}
+.pho4{
+    margin: 10px;
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+.pho5{
+    margin: 10px;
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+.hr{
+    width: 50px;
+    border: 1px solid gold;
+    display: inline-block;
+    position: relative;
+    left: 8%; 
+    bottom: 50px;
+}
+.thebg{
+    padding: 8%;
+    top: -10%;
+    font-size: 25px;
+    display: flex;
+    color: white;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+.gh{
+    padding-left: 10rem;
+}
+ .hn{
+    border: 1px solid gold;
+    width: 350px;
+    left: 10%;
+} 
+.han{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10%;
+    right: 5%;
+}
+/* .myservice{
+    text-align: center;
+} */
+.hrr{
+    right: 1%;
+    width: 50px;
+    border: 1px solid gold;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+}
+.content1 {
+    font-size: 20px;
+    border: 1px solid;
+    background-color: darkslategrey;
+    width: 300px;
+    margin: 15px;
+}
+.content2 {
+    font-size: 20px;
+    border: 1px solid;
+    background-color: darkslategrey;
+    width: 300px;
+    margin: 15px;
+}
+.content3 {
+    font-size: 20px;
+    margin: 15px;
+    border: 1px solid;
+    background-color: darkslategrey;
+    width: 300px;
+}
+.lorem{
+    color: white;
+}
+.web{
+    color: gold;
+
+}
+.more{
+    display: none;
+}
+.dots{
+    display: inline;
+}
+.myBtn {
+    color: gold;
+    background-color: darkslategrey;
+}
+.grid{
+    display: flex;
+    padding-left: 8rem;
+    margin-right: 25px;
+}
+.numbers{
+    display: flex;
+    color: gold;
+    font-size: 25px;
+    padding: 3rem;
+    font-family: 'Courier New', Courier, monospace;  
+}
+.nl{
+    padding-left: 8%;
+}
+.letters{
+    color: white;
+}
+.imagess{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    border-radius: 10px;
+}
+.img1{
+    margin: 10px;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+}
+.img2{
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+.img3{
+    margin: 10px;
+    border-radius: 20px;
+}
+.img4{
+    margin: 10px;
+    height: 300px;
+    width: 700px;
+    border-radius: 10px;
+}
+.img5{
+    margin: 10px;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+.img6{
+    margin: 10px;
+    height: 300px;
+    width: 250px;   
+    border-radius: 20px;
+}
+.entermail{
+    font-size: 20px;
+    color: white;
+    margin-left: 8%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.send{
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px;
+    background-color: gold;
+    color: black;
+    display: inline-block;
+    margin: 5px;
+    padding: 4px;
+   text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 8%;
+}
+.send:hover{
+    background-color: blue;
+    color: black;
+}
+.send a{
+    text-decoration: none;
+    color: white;
+}
+.svg{
+    background: url("path/to/curve.svg") center bottom no-repeat;
+    background-color: darkslategrey;
+    content: '';
+    height: 103px;
+    position: absolute;
+    width: 100%;
+
+}
+.footer{
+    position: absolute;
+    background-color: black;
+    font-size: 18px;
+    color: gold;
+    text-align: center;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.facebooklogo{
+    width: 30px;
+    margin: 10px;
+}
+.socials{
+    display: flex;
+    padding-left: 40%;
+    background-color: black;
+}
+.template{
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    padding: 30px;
+    font-weight: bold;
+    background-color: rgb(2, 2, 5);
+    display: flex;
+    text-align: center; /* Center the text */
+/*     position: fixed; 
+ */    width: 100%; /* Full width of the viewport */
+    bottom: 0;
+}
+.footer1{
+    margin: 10px;
+}
+.footer2{
+    margin: 10px;
+}
+.knowleemah{
+    background-image: url(haleemah.jpg.JPG);
+    background-color: darkolivegreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+

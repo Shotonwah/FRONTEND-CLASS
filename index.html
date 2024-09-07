@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leemah Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">>
-    <title>Bootsrap form</title>
-    <script href="script.js"></script>
-<!--     <link rel="stylesheet" href="style.css">
- -->
+
 </head>
 <style>
-        .full-height {
-            height: 100vh;
-        }
-        .form-background {
-            background-color: darkslategrey; 
+     .form-background {
             padding: 20px;
             border-radius: 10px; 
             color: white;
@@ -22,158 +17,205 @@
             margin-left: auto;
             margin-right: auto; 
         }
-        .Form{
-          text-align: center;
-          font-size: 30px;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        .form-control{
-            background-color: gray;
-        }
-        .custom-height-input{
-            height: 100px;
-        }
-        .submit{
-            border-radius: 10px;
-            margin: 0 200px auto;
-            width: 150px;
-        }
+    .form-control{
+       background-color: white; 
+    color: black;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 8%;
+}
+.custom-height-input{
+    height: 100px;
+    width: 500px;
+}
 </style>
-
 <body>
-    <div class="container-fluid full-height d-flex justify-content-center align-items-center">
-        <div class="form-background">
-        <form class="form">
-            <h3 class="Form">Student Application Form</h3>
-            <div class="form-group">
-                <label for="Email1">First Name</label>
-                <input type="firstname" class="form-control" id="name" name="firstname">
-              </div>
-            <div class="form-group">
-                <label for="Email1">Last Name</label>
-                <input type="lastname" class="form-control" id="name" name="lastname">
-              </div>  
-            <div class="form-group">
-                <label for="Email1">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Example@gmail.com">
-                <small id="emailHelp" class="form-text">please fill out this field.</small>
-              </div>
-              <div class="form-group">
-                <label for="Password">Password</label>
-                <input type="password" class="form-control" id="Password1" placeholder="enter password">
-                <small id="emailHelp" class="form-text">Enter atleast 12 characters</small>
-              </div>
-              <div class="form-group">
-                <label for="Email1">Address</label>
-                <input type="address" class="form-control" id="address" name="address">
-              </div>
-              <div class="form-group">
-                <label for="Email1">Country</label>
-                <input type="country" class="form-control" id="country" name="country">
-              </div> 
-              <div class="mb-3">
-                <label for="selectOption" class="form-group">City</label>
-<!--                 <input type="city" class="form-control" id="city" name="city">
- -->                <select  class="form-control" id="exampleSelect" aria-label="Default select example" >
-                    <option selected></option>
-                    <option value="1">Abia</option>
-                    <option value="2">Lagos</option>
-                    <option value="3">Ogun</option>
-                    <option value="4">Kwara</option>
-                    <option value="5">Anambra</option>
-                    <option value="6">Sokoto</option>
-                    <option value="7">Kaduna</option>
-                    <option value="8">Ondo</option>
-                    <option value="9">Bauchi</option>
-                    <option value="10">Ekiti</option>
-                    <option value="11">Imo</option>
-                    <option value="12">Kogi</option>
-                    <option value="13">FCT</option>
-                    <option value="14">Oyo</option>
-                    <option value="15">Osun</option>
-                </select> 
-              </div>
-              <div class="form-group">
-                <label for="age">Age</label>
-              </div>       
-        <div class="row"> 
-        <div class="col-md-4 mb-3">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
-                <label class="form-check-label" for="radio3">younger than 14</label>
-              </div>
-        </div>      
-              <div class="col-md-4 mb-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
-                    <label class="form-check-label" for="radio3">14-17</label>
-                </div>
-              </div>        
-                <div class="col-md-4 mb-3">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
-                        <label class="form-check-label" for="radio3">18+</label>
-                      </div>
-                </div>  
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                  </div>        
-                       <div class="row"> 
-                       <div class="col-md-4 mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
-                            <label class="form-check-label" for="radio3">Male</label>
-                          </div>
-                    </div> 
-                    <div class="col-md-4 mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
-                            <label class="form-check-label" for="radio3">Female</label>
-                          </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="option3">
-                            <label class="form-check-label" for="radio3">N/A</label>
-                          </div>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="form-group">
-                    <label for="age">Select the Applicable one</label>
-                  </div>
-                    <div class="form-remember">
-                        <input type="checkbox" class="Remember" id="remember">
-                        <label class="remember" for="remember1">I have been a student before</label>
-                      </div>
-                      <div class="form-remember">
-                        <input type="checkbox" class="Remember" id="remember">
-                        <label class="remember" for="remember1">I'm an Asolute beginner</label>
-                      </div>  
-                      <br>
-                      <div class="form-group">
-                        <label for="student">How long have you been a student?</label>
-                        <input type="student" class="form-control" id="name" name="state">
-                      </div>
-                      <div class="form-group">
-                        <label for="Email1">What do you Expect as a beginner?</label>
-                        <input type="beginner" class="form-control custom-height-input" id="name" name="state">
-                      </div>   
-                      <div class="form-group">
-                        <label for="Email1">Tell us about yourself?</label>
-                        <input type="beginner" class="form-control custom-height-input" id="name" name="state">
-                      </div>  
-                      <div class="form-group">
-                        <label for="Email1">What role can you perform?</label>
-                        <input type="beginner" class="form-control custom-height-input" id="name" name="state">
-                      </div>                        
-              <div class="form-remember">
-                <input type="checkbox" class="Remember" id="remember">
-                <label class="remember" for="remember1">Remember Me</label>
-              </div>
-              <button type="submit" class="btn btn-primary submit">Submit</button>
-        </form>
-    </div>
+    <div class="body">
+            <section class="content">
+            <div class="display navbar-expand-md navbar-light fixed-top bg-light">
+                <div class="leemah">LEE<i>M</i>AH</div>
+            <nav class="header">
+                <a href="portfolio.html" class="home">HOME</a>
+                <a href="#textwrap" class="about">ABOUT</a>
+                <a href="#myskills" class="skill">SKILLS</a>
+                <a href="Project.html" class="project">PROJECTS</a>
+                <a href="#contact" class="contact">CONTACT</a>
+            </nav>
+          </div>
+          <div class="sho">
+            <h3 class="iam">I AM SHOTONWA HALEEMAH <br>
+              &I AM A <strong class="developer">FRONTEND DEVELOPER</strong>
+            </h3>
+            </div>
+            <p class="lang">Meet Leemah an enthusiastic developer<br>
+                you can also see her works on UI/UX Design.
+            </p>
+            <div class="button">
+                <button class="works">My works</button>
+            </div> <br>
+            <div class="icn">
+                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+            </div>
 
+            <div class="backgroundcolor">
+                <div class="knoabout">
+                    <h3 class="know">Know <br>
+                        <strong class="aboutd">About Me</strong>
+                        <hr class="hj">
+                    </h3>
+                </div>
+                <div id="textwrap">
+                      <p class="text">I am a front End Web developer and an aspiring UI/UX designer.<br>
+                        I write html,Css,Javascript,React.<br>
+                        Check out my portfolio,About,Project,and Contact me.<br>
+                        Thank You.
+                     </p>
+                </div>    
+
+                <div class="link">
+                    <a href=" https://wa.me/[08126156598]" class="contactme">Contact Me</a>
+                    <a href="#" class="download">Download Cv</a>
+                </div>
+        <div id="myskills">
+                <p class="Area">My <br>
+                    <strong class="expertise">SKILLS</strong>
+                    <hr class="hr">
+                </p>
+            
+            <div class="images">
+                <img src="html img.jpg" alt="img" class="pho1">
+                <img src="css img.jpg" alt="vic" class="pho2">
+                <img src="bootsr img.jpg" alt="ing" class="pho3">
+            </div>
+            <div class="images">
+                <img src="java img.jpg" alt="ink" class="pho4">
+                <img src="react img.jpg" alt="vuin" class="pho5">
+            </div>
+        </div>    
+                <div class="myservice">
+                    <p class="Area">My <br>
+                        <strong class="expertise">PROJECTS</strong>
+                        <hr class="hr">
+                    </p>
+                </div>
+                <div class="imagess">
+                    <img src="image 1.jpg" alt="img" class="img1">
+                    <img src="image 5.jpg" alt="vic" class="img2">
+                    <img src="image 2.jpg" alt="ing" class="img3">
+            </div>
+            <div class="imagess">
+                    <img src="image 3.jpg" alt="ink" class="img4">
+                    <img src="image 4.jpg" alt="vuin" class="img5">
+                    <img src="image 6.jpg" alt="wuc" class="img6">
+            </div>
+
+            <div class="numbers">
+                <p class="nl">1800+ <br> <span class="letters">PROJECTS</span></p>
+                <p class="nl">500+ <br> <span class="letters">CLIENTS</span></p>
+                <p class="nl">1500+ <br> <span class="letters">COMPLETED</span></p>
+                <p class="nl">3500+ <br> <span class="letters">UPCOMING</span></p>
+            </div>
+                    <div id="contact">
+                        <p class="Area">InQuiry <br>
+                            <strong class="expertise">CONTACT ME</strong>
+                            <hr class="hr">
+                        </p>
+                        <form class="form" action="mailto:haleemahshotonwa82@email@example.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="entermail" class="entermail">Enter Your Mail</label>
+                                <input type="email" class="form-control" placeholder="@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="message" class="entermail">Enter Your Message</label>
+                                <textarea rows="4" placeholder="Write us a message" class="form-control custom-height-input" id="message" name="message" required></textarea>
+                              </div>  
+                            </form>
+                            <button class="send"> <a href="mailto:haleemahshotonwa82@gmail.com">Send</a></button>
+
+                    </div>
+                    <div class="template">
+                        <p>HOME <br>
+                        <span class="footer1">Website Builder <br>
+                           Email Template  <br>
+                           Online Form Builder <br>
+                           Chat Box Builder <br>
+                           Land page Builder <br>
+                           Web Hosting <br>
+                           Website Generator <br>
+                           Content Writer  
+                        </span>
+                        </p>
+                        <p class="footer2">ABOUT <br>
+                        <span>Website Builder <br>
+                            Email Template  <br>
+                            Online Form Builder <br>
+                            Chat Box Builder <br>
+                            Land page Builder <br>
+                            Web Hosting <br>
+                            Website Generator <br>
+                            Content Writer  
+                        </span>
+                      </p>
+                      <p class="footer2">SKILLS <br>
+                        <span>Website Builder <br>
+                            Email Template  <br>
+                            Online Form Builder <br>
+                            Chat Box Builder <br>
+                            Land page Builder <br>
+                            Web Hosting <br>
+                            Website Generator <br>
+                            Content Writer  
+                        </span>
+                      </p>
+                      <p class="footer2">PROJECT <br>
+                        <span>Website Builder <br>
+                            Email Template  <br>
+                            Online Form Builder <br>
+                            Chat Box Builder <br>
+                            Land page Builder <br>
+                            Web Hosting <br>
+                            Website Generator <br>
+                            Content Writer  
+                        </span>
+                      </p>
+
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/omolara-leemah-asake" target="_blank" id="facebook-link">
+                            <img src="facebook logo.jpg" alt="Facebook Logo" class="facebooklogo">
+                        </a>
+                        <a href="https://www.twitter.com/S_Halemah" target="_blank" id="facebook-link">
+                            <img src="twitter logo.jpg" alt="twitter Logo" class="facebooklogo">
+                        </a>
+                        <a href="https://www.instagram.com/Leemah_cakes'n bakes" target="_blank" id="facebook-link">
+                            <img src="instagram logo.jpg" alt="instagram Logo" class="facebooklogo">
+                        </a>
+                        <a href="https://www.linkedin.com/Shotonwa Haleemah" target="_blank" id="facebook-link">
+                            <img src="linkedin logo.jpg" alt="linkedin Logo" class="facebooklogo">
+                        </a>
+                        <a href="https://www.github.com/Shotonwah" target="_blank" id="facebook-link">
+                            <img src="github logo.jpg" alt="github Logo" class="facebooklogo">
+                        </a>  
+                    </div>
+                    <footer class="footer">&copy;2024.All right reserved to LEEMAH.</footer>
+
+
+
+
+                </div>
+                
+        </section>
+
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('facebook-link').addEventListener('click', function() {
+    alert('You are being redirected to Facebook.');
+});
+    </script>
 </body>
 </html>
